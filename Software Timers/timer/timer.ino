@@ -9,6 +9,7 @@ TimerHandle_t xAutoReloadTimer, xOneShotTimer;
 BaseType_t xTimer1Started, xTimer2Started;
 unsigned long runTime;
 
+int RUN_time =10000;
 volatile int counter = 0;
 
 void setup() {
@@ -43,7 +44,7 @@ void setup() {
 
 void loop() {
   // Kiểm tra xem đã đủ thời gian chạy chưa
-  if (millis() - runTime >= 10000) {
+  if (millis() - runTime >= RUN_time) {
     stopTimers();
   }
 }
