@@ -1,0 +1,3 @@
+xTimerCreate & xTimerStart & xTimerStop
+
+Software timers cho phép bạn thực hiện các tác vụ lặp đi lặp lại theo chu kỳ cố định mà không cần sử dụng hàm delay() gây ra tình trạng treo hệ thống.
